@@ -13,7 +13,7 @@ int main(void)
 
 	while (i <= '9')
 	{
-		while (j <='9')
+		while (j <= '9')
 		{
 			if (!(i > j) || i == j)
 			{
@@ -25,15 +25,16 @@ int main(void)
 				}
 				else
 				{
-					putchar('.');
+					putchar(',');
 					putchar(' ');
 				}
-              		}
-                        j++;
 
+			}
+			j++;
 		}
 		j = '0';
 		i++;
+
 	}
 return (0);
 }
